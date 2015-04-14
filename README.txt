@@ -1,17 +1,18 @@
 # articles_dynamic
 Elastic beanstalk webpage to display RDS articles
 
-To get connected to aws database enter info:
+in db_connection.php:
+<?php
 
----project_editor.php---
-$opts['hn'] = 'mySQL host name';
-$opts['un'] = 'user name';
-$opts['pw'] = 'password';
-$opts['db'] = 'database name';
-$opts['tb'] = 'specific table';
-
----index.php---
+//for index.php
+$host = '';
+$port = 3306;
 $user = '';
 $password = '';
 $db = '';
-$host = '';
+
+//for project_editor.php
+$projtable = '';
+
+
+?>

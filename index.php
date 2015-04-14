@@ -1,11 +1,6 @@
 <?php 
-session_start();
 //connection to projects database
-$user = '';
-$password = '';
-$db = '';
-$host = '';
-$port = 3306;
+include "db_connection.php";
 $link = mysql_connect("$host:$port", $user, $password);
 if(! $link ) { die('Could not connect: '.mysql_error()); }
 $db_selected = mysql_select_db($db, $link);

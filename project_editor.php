@@ -24,14 +24,15 @@
 <p><a href='editor_home.php'>Back to Admin Home</a></p>
 
 <?php
-
+include 'db_connection.php';
 
 // MySQL host name, user name, password, database, and table
-$opts['hn'] = 'mySQL host name';
-$opts['un'] = 'user name';
-$opts['pw'] = 'password';
-$opts['db'] = 'database name';
-$opts['tb'] = 'specific table';
+$opts['hn'] = $host;
+$opts['un'] = $user;
+$opts['pw'] = $password;
+$opts['db'] = $db;
+$opts['tb'] = $projtable;
+
 
 // Name of field which is the unique key
 $opts['key'] = 'full_title';
